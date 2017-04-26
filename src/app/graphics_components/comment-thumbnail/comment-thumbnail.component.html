@@ -1,0 +1,26 @@
+<table style="border: 2px solid grey; width: 100%">
+
+  <div *ngFor="let commentaire of restau.commentaires" [routerLink]="['/detail', restau.id]">
+
+  <tr >
+    <td>
+      <div>
+        {{commentaire.pseudo}}<br>{{commentaire.note}}
+      </div>
+    </td>
+
+    <div style="border: 2px solid grey; width: 100%">
+      {{commentaire.keyword}}<br>
+      <p>Avis publié le : {{commentaire.date}}</p><br>
+      {{commentaire.description}}
+
+
+    </div>
+
+  </tr>
+  </div>
+</table>
+
+
+
+

@@ -1,10 +1,19 @@
-import {Component} from "@angular/core";
+import {Component, OnInit, Input} from '@angular/core';
+import {Restaurant} from '../../restaurant/restaurant';
+
 @Component ({
   selector: 'app-comment-thumbnail',
-  template: `
-  <h3>CommentThumbnailComponent Works !</h3>
-  `
+  templateUrl: 'comment-thumbnail.component.html'
 })
-export class CommentThumbnailComponent {
+
+export class CommentThumbnailComponent implements OnInit{
+
+  @Input () restau: Restaurant;
+
+  ngOnInit(): void {
+  }
+
+
+
 
 }

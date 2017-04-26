@@ -1,8 +1,8 @@
-import {Component, Input, OnInit} from "@angular/core";
-import {Restaurant} from "../restaurant/restaurant";
-import {ActivatedRoute, Params} from "@angular/router";
+import {Component, Input, OnInit} from '@angular/core';
+import {Restaurant} from '../restaurant/restaurant';
+import {ActivatedRoute, Params} from '@angular/router';
 import 'rxjs/add/operator/switchMap';
-import {AppService} from "../app.service";
+import {AppService} from '../app.service';
 import {Location} from '@angular/common';
 @Component({
   selector: 'app-restau-details',
