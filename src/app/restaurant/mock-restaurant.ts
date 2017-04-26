@@ -27,7 +27,7 @@ export const RESTAURANTS : Restaurant[] = [
     ambiance: "Familliale",
     service: "Parking",
     description: "Le classique",
-    ouvert: true,
+    ouvert: false,
     type: ["Brasserie", "Pizzeria"]
   },
   {

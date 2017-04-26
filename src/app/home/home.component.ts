@@ -13,7 +13,8 @@ import {RESTAURANTS} from "../restaurant/mock-restaurant";
 export class HomeComponent implements OnInit{
   buttonText: string = "Trouver son restaurant";
 
-  restaus: Restaurant[];
+  restaus: Restaurant[] = [];
+
 
 
   constructor(private router: Router) {}
@@ -23,7 +24,10 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(){
     this.restaus = RESTAURANTS;
+
   }
+
+
 
 
 

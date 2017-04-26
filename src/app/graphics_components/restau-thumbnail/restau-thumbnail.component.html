@@ -1,10 +1,10 @@
-<table style="border: 2px solid green; width: 30%">
+<table class="myThumbnail" style="width: 30%">
   <tr>
     <td>
-       <div class="cercle"></div>
+       <div class="cercleGreen" [ngClass]="{'cercleRed': !restau.ouvert}"></div>
     </td>
 
-     <div style="border: 2px solid grey; width: 90%">
+     <div style="border: 2px solid grey; width: 250%">
       {{restau.nom}} <br>
       {{restau.ambiance}}<br>
       {{restau.service}}<br>

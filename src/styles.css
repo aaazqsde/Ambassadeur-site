@@ -9,11 +9,21 @@ body {
   margin: auto;
 }
 
-.cercle {
+.cercleGreen {
   width: 100px;
   height: 100px;
   background: white;
   border: 4px solid green;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.cercleRed {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 4px solid red;
   border-radius: 50%;
   text-align: center;
   line-height: 100px;
@@ -25,11 +35,30 @@ table {
 }
 
 td {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
-td:nth-child(odd) {
+/*td:nth-child(odd) {*/
+  /*width: 110px;*/
+/*}*/
+
+.myThumbnail td:nth-child(odd) {
   width: 110px;
+
 }
 
+.homeTable td {
+  border: 2px solid blue;
+}
 
+#tempo td {
+  /*border: 2px solid blue;*/
+}
+
+#trouverRestaurant button{
+  height: 40px;
+  font-size: 18px;
+  padding: 5px;
+
+
+}
