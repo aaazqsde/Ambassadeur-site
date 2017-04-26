@@ -1,0 +1,49 @@
+<div *ngIf="restau">
+
+  <h2><u>{{restau.nom}}</u></h2>
+  <h3>Ajouter Notation</h3>
+  <br><br>
+  <app-gallery></app-gallery>
+  (à gauche)
+  <h3>Map et contacts (à droite)</h3>
+
+
+  <div style="border: 2px solid gray; width: 1000px">
+    <p>
+      <strong><u>Type de restauration</u> : </strong>
+      {{restau.type}}
+    </p>
+    <p>
+      <strong><u>Ambiance</u> : </strong>
+      {{restau.ambiance}}
+    </p>
+    <p>
+      <strong><u>Service</u> : </strong>
+      {{restau.service}}
+    </p>
+    <p>
+      <strong><u>Description</u> : </strong>
+      {{restau.description}}
+    </p>
+    <p>
+      <strong><u>Horaires</u> : </strong>
+      {{restau.horaires}} Coming soon
+    </p>
+
+
+  </div>
+
+  <br><br><br>
+
+  <div>
+    <h4>Mon avis : </h4>
+    <div style="border: 2px solid grey">Insérer les étoiles içi</div>
+  </div>
+
+  <br><br><br>
+  <app-comment-thumbnail></app-comment-thumbnail>
+
+</div>
+
+
+

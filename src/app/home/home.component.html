@@ -1,0 +1,50 @@
+<br><br><br><br>
+
+
+<app-button [fullWidth]="true" [buttonText]="buttonText" (click)="redirectToSearch()"></app-button>
+<br>
+
+<p><u><strong>Ouvert actuellement</strong></u></p>
+
+<br>
+
+<div style="width: 100%; background-color: whitesmoke">
+
+  <table >
+
+  <div *ngFor="let restau of restaus" [routerLink]="['/detail', restau.id]">
+
+    <td>
+
+    </td>
+
+  </div>
+
+    <!--<div *ngIf="restau === restaus[3]">-->
+
+      <!--<tr>-->
+        <!--<td>-->
+          <!--<app-restau-thumbnail [restau]="restau"></app-restau-thumbnail>-->
+        <!--</td>-->
+      <!--</tr>-->
+    <!--</div>-->
+
+    <!--<div *ngIf="restau !== restaus[3]">-->
+
+      <!--<td>-->
+        <!--<app-restau-thumbnail [restau]="restau"></app-restau-thumbnail>-->
+      <!--</td>-->
+    <!--</div>-->
+
+
+  </table>
+
+
+</div>
+
+
+<!--<ul>-->
+<!--<li *ngFor="let restau of restaus" [routerLink]="['/detail', restau.id]">-->
+<!--<app-restau-thumbnail [restau]="restau"></app-restau-thumbnail>-->
+<!--</li>-->
+<!--</ul>-->
