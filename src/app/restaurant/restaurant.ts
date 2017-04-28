@@ -23,6 +23,8 @@ export class Restaurant {
     samedi: [{from: number, to: number}],
     dimanche: [{from: number, to: number}]
   };
+  images?: [string];
+  coordinates?: [{lat: number, long: number}];
 
 
 

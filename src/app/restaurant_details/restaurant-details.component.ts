@@ -4,9 +4,11 @@ import {ActivatedRoute, Params} from '@angular/router';
 import 'rxjs/add/operator/switchMap';
 import {AppService} from '../app.service';
 import {Location} from '@angular/common';
+
 @Component({
   selector: 'app-restau-details',
-  templateUrl: './restaurant-details.component.html'
+  templateUrl: './restaurant-details.component.html',
+  styleUrls: ['./restaurant-details.component.css']
 
 })
 export class RestaurantDetailsComponent implements OnInit {

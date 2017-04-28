@@ -8,7 +8,7 @@ export const RESTAURANTS: Restaurant[] = [
     ambiance: 'Conviviale',
     service: 'Terrasse',
     description: 'C\'est trop de la .....',
-    ouvert: false,
+    ouvert: true,
     type: ['Brasserie'],
     commentaires: [{
       pseudo: 'maxime F',
@@ -30,7 +30,10 @@ export const RESTAURANTS: Restaurant[] = [
         date: '04/28/2017',
         description: 'J\'aime pas le sucré salé' ,
         note: 1
-      }]
+      }],
+    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg', 'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
+    coordinates: [{lat: 48.123737 , long: -1.213258 }]
+
 
 
   },

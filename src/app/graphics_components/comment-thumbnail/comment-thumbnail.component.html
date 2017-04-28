@@ -1,22 +1,22 @@
 <table style="border: 2px solid grey; width: 100%">
 
-  <div *ngFor="let commentaire of restau.commentaires" [routerLink]="['/detail', restau.id]">
+  <div *ngFor="let commentaire of restau.commentaires" [routerLink]="['/detail', restau.id]" class="commentaire">
 
   <tr >
-    <td>
+    <td style="border: 2px solid grey; min-width:120px ">
       <div>
-        {{commentaire.pseudo}}<br>{{commentaire.note}}
+        <p style="text-align:center ">{{commentaire.pseudo}}<br>Note : </p><p style="color:darkred; text-align:center; font-size:30px">{{commentaire.note}}</p>
       </div>
     </td>
-
-    <div style="border: 2px solid grey; width: 100%">
-      {{commentaire.keyword}}<br>
+    <td style="border: 2px solid grey; width: 100%; background-color: skyblue">
+    <div>
+      <p style="color: green; margin-left: 10px">{{commentaire.keyword}}</p><br>
       <p>Avis publié le : {{commentaire.date}}</p><br>
-      {{commentaire.description}}
+      <p>Commentaire : {{commentaire.description}}</p>
 
 
     </div>
-
+    </td>
   </tr>
   </div>
 </table>
