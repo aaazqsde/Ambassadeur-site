@@ -1,34 +1,40 @@
 <br><br><br>
 
-<h2>SearchComponent works</h2>
-
-<br><br><br>
-
-
-
 <!----------Boîte de Recherche----------->
 
 <div id="searchBox">
   <br>
   <input id="searchInput" type="search" size="120%" [(ngModel)]="search"
-         placeholder="Entrez içi le nom du restaurant ..." (keyup)="compareName()">
+         placeholder="Entrez içi le nom du restaurant ..." (keyup)="compareName()" (keydown)="resetResults()">
   <br>
-  <div>ma recherche : {{search}}</div>
 
 
 </div>
 
 <!---------------------------------------->
+<br><br>
+<h3 style="text-align: center"><u>Insérer Map içi</u></h3>
+<br><br>
 
-<!--Insérer Google Map-->
-
+<!--------------------------------------->
 <!-------------Résultats----------------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!--------------------------------------->
+<br>
 
-<div  *ngFor="let resto of results">
+<div id="searchResult">
 
-  <app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>
+  <div *ngIf="results.length === 0" style="text-align: center">
+    <strong><u>Aucun résultat</u></strong>
+  </div>
 
+  <div *ngFor="let resto of results">
+
+
+    <app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>
+
+  </div>
 </div>
-
 
 <!---------------------------------------->

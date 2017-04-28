@@ -12,3 +12,10 @@
 
 
 }
+
+#searchResult{
+  border: 2px solid black;
+  width: 90%;
+  margin: auto;
+  min-height: 500px;
+}

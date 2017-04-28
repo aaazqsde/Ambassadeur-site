@@ -12,14 +12,14 @@
 <table id="tempo">
   <tr>
 
-      <td style="width: 33%"  *ngFor="let resto of premiereLigne" [routerLink]="['/detail', resto.id]">
+      <td style="width: 33%"  *ngFor="let resto of premiereLigne"  >
         <app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>
       </td>
   </tr>
 
   <tr>
 
-      <td style="width: 33%"  *ngFor="let resto of secondeLigne" [routerLink]="['/detail', resto.id]">
+      <td style="width: 33%"  *ngFor="let resto of secondeLigne">
         <app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>
       </td>
 
