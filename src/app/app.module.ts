@@ -24,7 +24,7 @@ import {AccordionModule} from 'primeng/primeng';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { MapComponent } from './graphics_components/map/map.component';
 import { NotationComponent } from './graphics_components/notation/notation.component';
-import {RatingModule} from 'primeng/primeng';
+import { RatingModule } from 'primeng/primeng';
 
 
 
@@ -43,9 +43,7 @@ import {RatingModule} from 'primeng/primeng';
     GalleryComponent,
     CommentThumbnailComponent,
     MapComponent,
-    NotationComponent,
-
-
+    NotationComponent
   ],
   imports: [
     BrowserModule,
