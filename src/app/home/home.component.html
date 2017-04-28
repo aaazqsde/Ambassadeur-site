@@ -11,18 +11,37 @@
 
 <table id="tempo">
   <tr>
-    <ng-template ngFor let-resto [ngForOf]="restaus">
-      <td style="width: 33%" *ngIf="resto.id < restaus[3].id" [routerLink]="['/detail', resto.id]">
+
+      <td style="width: 33%"  *ngFor="let resto of premiereLigne" [routerLink]="['/detail', resto.id]">
         <app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>
       </td>
-    </ng-template>
   </tr>
+
   <tr>
-    <ng-template ngFor let-resto [ngForOf]="restaus">
-      <td style="width: 33%" *ngIf="resto.id >= restaus[3].id" [routerLink]="['/detail', resto.id]">
+
+      <td style="width: 33%"  *ngFor="let resto of secondeLigne" [routerLink]="['/detail', resto.id]">
         <app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>
       </td>
-    </ng-template>
+
   </tr>
 
 </table>
+
+
+
+
+
+<!--<tr>-->
+  <!--<ng-template ngFor let-resto [ngForOf]="restaus">-->
+    <!--<td style="width: 33%" *ngIf="resto.id < restaus[3].id" [routerLink]="['/detail', resto.id]">-->
+      <!--<app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>-->
+    <!--</td>-->
+  <!--</ng-template>-->
+<!--</tr>-->
+<!--<tr>-->
+  <!--<ng-template ngFor let-resto [ngForOf]="restaus">-->
+    <!--<td style="width: 33%" *ngIf="resto.id >= restaus[3].id" [routerLink]="['/detail', resto.id]">-->
+      <!--<app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>-->
+    <!--</td>-->
+  <!--</ng-template>-->
+<!--</tr>-->

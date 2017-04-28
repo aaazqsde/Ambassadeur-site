@@ -3,3 +3,32 @@
 <h2>SearchComponent works</h2>
 
 <br><br><br>
+
+
+
+<!----------Boîte de Recherche----------->
+
+<div id="searchBox">
+  <br>
+  <input id="searchInput" type="search" size="120%" [(ngModel)]="search"
+         placeholder="Entrez içi le nom du restaurant ..." (keyup)="compareName()">
+  <br>
+  <div>ma recherche : {{search}}</div>
+
+
+</div>
+
+<!---------------------------------------->
+
+<!--Insérer Google Map-->
+
+<!-------------Résultats----------------->
+
+<div  *ngFor="let resto of results">
+
+  <app-restau-thumbnail [restau]="resto"></app-restau-thumbnail>
+
+</div>
+
+
+<!---------------------------------------->
