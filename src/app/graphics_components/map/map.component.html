@@ -1,0 +1,9 @@
+
+<div *ngFor="let coordinate of restau.coordinates" [routerLink]="['/detail', restau.id]">
+
+<sebm-google-map [latitude]="coordinate.lat" [longitude]= "coordinate.long" [zoom]="17">
+  <sebm-google-map-marker [latitude]="coordinate.lat" [longitude]="coordinate.long"></sebm-google-map-marker>
+</sebm-google-map>
+
+
+</div>
