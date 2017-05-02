@@ -31,7 +31,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'J\'aime pas le sucré salé' ,
         note: 1
       }],
-    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg', 'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
+    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg',
+      'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
     coordinates: [{lat: 48.123737 , long: -1.213258 }]
 
 
@@ -44,7 +45,10 @@ export const RESTAURANTS: Restaurant[] = [
     service: 'Parking',
     description: 'Le classique',
     ouvert: true,
-    type: ['Brasserie', 'Pizzeria']
+    type: ['Brasserie', 'Pizzeria'],
+    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg',
+      'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
+
 
   },
   {
@@ -54,7 +58,10 @@ export const RESTAURANTS: Restaurant[] = [
     service: 'Parking',
     description: 'Le classique',
     ouvert: false,
-    type: ['Brasserie', 'Pizzeria']
+    type: ['Brasserie', 'Pizzeria'],
+    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg',
+      'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
+
   },
   {
     id : 4,
@@ -63,7 +70,10 @@ export const RESTAURANTS: Restaurant[] = [
     service: 'Parking',
     description: 'Le classique',
     ouvert: true,
-    type: ['Brasserie', 'Pizzeria']
+    type: ['Brasserie', 'Pizzeria'],
+    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg',
+      'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
+
   },
   {
     id : 5,
@@ -72,7 +82,10 @@ export const RESTAURANTS: Restaurant[] = [
     service: 'Parking',
     description: 'Le classique',
     ouvert: true,
-    type: ['Brasserie', 'Pizzeria']
+    type: ['Brasserie', 'Pizzeria'],
+    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg',
+      'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
+
   },
   {
     id : 6,
@@ -81,7 +94,10 @@ export const RESTAURANTS: Restaurant[] = [
     service: 'Parking',
     description: 'Le classique',
     ouvert: true,
-    type: ['Brasserie', 'Pizzeria']
+    type: ['Brasserie', 'Pizzeria'],
+    images: ['D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/1.jpg',
+      'D:/code/Ambassadeur-site/Ambassadeur-site/src/assets/images/2.jpg'],
+
   }
 ];
 
